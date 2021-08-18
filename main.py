@@ -1,5 +1,6 @@
 from lib.file_handling import *
 from lib.interface_functions import *
+import os
 
 from time import sleep
 

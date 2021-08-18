@@ -1,3 +1,5 @@
+
+
 # formatação visual #
 def line(tam=42):
     return "-" * tam
@@ -65,13 +67,17 @@ def input_error(adtional = ""):
     print(line(10).center(30))
     print(f"{color_red()}Erro{color_reset()} digite algo valido{adtional}".center(42))
     print(line(10).center(30))
-def leave():
-    while True:
-        try: answer = input(f"certeza que quer {color_red()}sair{color_reset()}? ({color_red()}S{color_reset()}/{color_red()}N{color_reset()}): ")
-        except: input_error(f"(digite 's' ou 'n')")
-        else:
-            if answer == 's' or answer == 'S': highlight("Byee :)", color_yellow()), exit() 
-            elif answer == "n" or answer == "N": return 
-            else: input_error(f"(digite 's' ou 'n')")
+def clear(before = 0, after = 0):
+    from os import name, system
+    if before != 0 or after != 0:
+        from time import sleep
+        sleep(before)
+        system('cls' if name == 'nt' else 'clear')
+        sleep(after)
+    else:
+        system('cls' if name == 'nt' else 'clear')
+    return
+
+            
 # funções reutilizaveis #
 ''''''
