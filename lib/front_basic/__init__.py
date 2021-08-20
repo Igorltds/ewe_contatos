@@ -1,5 +1,3 @@
-
-
 # formatação visual #
 def line(tam=42):
     return "-" * tam

@@ -1,15 +1,16 @@
 from lib.file_handling import *
-from lib.interface_functions import *
-import os
-
+from lib.front_menus import *
 from time import sleep
 
-# check/create date
-exist("date_users.txt")
-exist("date_contacts.txt")
+
+# check/create data
+data_users = "data_users.txt"
+data_contacts = "data_contacts.txt"
+exist(data_users)
+exist(data_contacts)
 
 # check/create main user
-pass
 
 #iniciar no usuario principal
-home_menu()
+print("\n\n")
+home_menu(data_users, data_contacts)

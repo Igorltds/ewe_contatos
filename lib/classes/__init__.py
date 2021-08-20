@@ -1,4 +1,4 @@
-from datetime import date
+from time import date
 
 class User:
     def __init__(self, name, birth = date.today(), nick_name = "", email = ""):
