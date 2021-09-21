@@ -1,2 +1,3 @@
-# Orunmila
-Agendas em python para treino e para aquecer antes de tentar em Flutter de verdade.
+# Ewe
+Contatos em python para treino e para aquecer antes de tentar em Flutter de verdade.
+ 
